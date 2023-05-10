@@ -3,7 +3,22 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            img {
+
+        .container {
+            position: relative;
+            font-family: Arial;
+            color: aliceblue;
+            text-emphasis-color: 2px 2px #000000;
+        }
+
+        .bottomleft {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+
+        img {
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -13,32 +28,65 @@
             div {text-align: center;}
             img {
             border: 5px solid #555;
-            }
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+        
         </style>
     <!--Header-->
-        <img class="background-image" src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/raincloud_pano.jpg" alt="raincloud_pano" width="1400" height="300" class="center">
-        <div class="overlay-text"></div>
+    <div class="container">
+        <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/raincloud_pano.jpg" alt="raincloud_pano" width="1400" height="300" class="center">
+        <div class="bottomleft">
         <h1>Drone Photography</h1>
         </div>
+    </div>
 
     </head>
 <body>
+    <br>
 
-<br>
-<br><br>
-<img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/genesee_river_ny.JPG" alt="genesee_river_ny" width="1000" height="600" class="center">
-<br><br>
-<img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/horses.mov" alt="horses" width="1000" height="600" class="center">
-<br><br>
-<img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/house_front.jpeg" alt="house_front" width="1000" height="600" class="center">
-<br><br>
-<img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/house_back.jpeg" alt="house_front" width="1000" height="600" class="center">
-<br><br>
-<img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/house_pullaway.MP4" alt="house_pullaway" width="1000" height="600" class="center">
-<br><br>
-<img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/sunset_palo_verde_mountains.jpg" alt="sunset_palo_verde_mountains" width="1000" height="600" class="center">
-<br><br>
-<img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/strm_over_city.jpg" alt="strm_over_city" width="1000" height="600" class="center">
-<br><br>
+
+    <br><br>
+    <h2 align="center">Portfolio</h2>
+    <br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/genesee_river_ny.JPG" alt="genesee_river_ny" width="1000" height="600" class="center">
+    <br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/horses.mov" alt="horses" width="1000" height="600" class="center">
+    <br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/house_front.jpeg" alt="house_front" width="1000" height="600" class="center">
+    <br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/house_back.jpeg" alt="house_front" width="1000" height="600" class="center">
+    <br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/house_pullaway.MP4" alt="house_pullaway" width="1000" height="600" class="center">
+    <br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/sunset_palo_verde_mountains.jpg" alt="sunset_palo_verde_mountains" width="1000" height="600" class="center">
+    <br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/strm_over_city.jpg" alt="strm_over_city" width="1000" height="600" class="center">
+    <br><br>
+    <h2 align="center">Services</h2>
+    <br><br>
+    <h2 align="center">Schedule</h2>
+    <form style="justify-content:center; display: flex;">
+   
+        <br>
+        First Name<input type="text" name="search" >
+        <br>
+        Last Name<input type="text" name="search" >
+        <br>
+        Email<input type="text" name="search" >
+        <br>
+        <input type="submit" value="Enter"/>
+        
+        </form>
+    <br><br>
+    <h2 align="center">About</h2>
+    <br><br>
 </body>
 </html>
