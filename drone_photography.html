@@ -22,6 +22,58 @@
       font-size: 48px;
       font-weight: bold;
     }
+
+    .portfolio {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .portfolio img {
+      width: 800px;
+      height: auto;
+      border: 2px solid gray;
+      padding: 5px;
+    }
+
+    .services {
+      text-align: center;
+      margin: 50x 0;
+      border: 2px solid gray;
+      padding: 5px;
+    }
+
+    .contact-form {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .contact-form input {
+      display: block;
+      margin: 10px auto;
+      padding: 5px;
+      width: 200px;
+    }
+
+    .about-me {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 50px 0;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .about-me img {
+      width: 200px;
+      height: auto;
+      border: 2px solid gray;
+      padding: 5px;
+    }
+
+    .about-me p {
+      flex: 1;
+      margin-left: 20px;
+    }
   </style>
 </head>
 <body>
@@ -29,5 +81,40 @@
     <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/raincloud_pano.jpg" alt="raincloud_pano">
     <div class="overlay">Drone Photography</div>
   </div>
+  
+<section class="portfolio">
+    <h2>Portfolio</h2>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/genesee_river_ny.JPG" alt="genesee_river_ny"><br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/horses.mov" alt="horses"><br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/house_front.jpeg" alt="house_front"><br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/house_back.jpeg" alt="house_back"><br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/house_pullaway.MP4" alt="house_pullaway"><br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/sunset_palo_verde_mountains.jpg" alt="sunset_palo_verde_mountains"><br><br>
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/strm_over_city.jpg" alt="strm_over_city"><br><br>
+  </section>
+  
+  <section class="services">
+    <h2>Services</h2>
+    <p>Landscape</p>
+    <p>Real Estate</p>
+    <p>Film</p>
+  </section>
+  
+  <section class="contact-form">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" name="firstname" placeholder="First Name">
+      <input type="text" name="lastname" placeholder="Last Name">
+      <input type="email" name="email" placeholder="Email">
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <section class="about-me">
+    <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/drone_long_shot.png" alt="About Me Image">
+    <p>I am a Licensed Drone Pilot with over 5 years experience in Real Estate and Landscape photography. I am also available for drone film work.</p>
+  </section>
+
 </body>
 </html>
