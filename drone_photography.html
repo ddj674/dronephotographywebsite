@@ -3,6 +3,12 @@
 <head>
   <title>Drone Photography</title>
   <style>
+     body {
+      background-color: #e6f3f6;
+      margin: 0;
+      padding: 0;
+    }
+
     .header {
       position: relative;
       text-align: center;
@@ -31,14 +37,14 @@
     .portfolio img {
       width: 800px;
       height: auto;
-      border: 2px solid gray;
+      border: 2px solid #c5beb2;
       padding: 5px;
     }
 
     .services {
       text-align: center;
       margin: 50x 0;
-      border: 2px solid gray;
+      border: 2px solid #c5beb2;
       padding: 5px;
     }
 
@@ -55,34 +61,51 @@
     }
 
     .about-me {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      text-align: center;
       margin: 50px 0;
-      background-color: #f1f1f1;
+      background-color: #c5beb2;
       padding: 20px;
     }
 
     .about-me img {
       width: 200px;
       height: auto;
-      border: 2px solid gray;
+      border: 2px solid #c5beb2;
       padding: 5px;
     }
 
-    .about-me p {
-      flex: 1;
-      margin-left: 20px;
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .btn-container button {
+      padding: 10px 20px;
+      background-color: #80c0d6;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <div class="header">
+  <div class="header" id="home">
     <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/raincloud_pano.jpg" alt="raincloud_pano">
     <div class="overlay">Drone Photography</div>
   </div>
+
+  <div class="btn-container">
+    <button onclick="location.href='#portfolio'">Portfolio</button>
+    <button onclick="location.href='#services'">Services</button>
+    <button onclick="location.href='#contact-form'">Contact</button>
+    <button onclick="location.href='#about-me'">About</button>
+  </div>
   
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
     <h2>Portfolio</h2>
     <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/genesee_river_ny.JPG" alt="genesee_river_ny"><br><br>
     <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/horses.mov" alt="horses"><br><br>
@@ -93,15 +116,16 @@
     <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/strm_over_city.jpg" alt="strm_over_city"><br><br>
   </section>
   
-  <section class="services">
+  <section class="services" id="services">
     <h2>Services</h2>
     <p>Landscape</p>
     <p>Real Estate</p>
     <p>Film</p>
   </section>
   
-  <section class="contact-form">
+  <section class="contact-form" id="contact-form">
     <h2>Contact</h2>
+    <p>Please fill out and submit this contact form to schedule a consusltation.</p>
     <form>
       <input type="text" name="firstname" placeholder="First Name">
       <input type="text" name="lastname" placeholder="Last Name">
@@ -111,10 +135,14 @@
     </form>
   </section>
 
-  <section class="about-me">
+  <section class="about-me" id="about-me">
+    <h2>About</h2><br>
     <img src="https://dronephotographywebsite.s3.us-west-1.amazonaws.com/website+photos+and+docs/drone_long_shot.png" alt="About Me Image">
-    <p>I am a Licensed Drone Pilot with over 5 years experience in Real Estate and Landscape photography. I am also available for drone film work.</p>
+    <p>I am a Licensed Drone Pilot with<br>over 5 years experience in Real<br>Estate and Landscape photography.<br>I am also available for drone film work.</p>
   </section>
 
+  <div class="btn-container">
+    <button onclick="location.href='#home'">Home</button>
+  </div><br><br>
 </body>
 </html>
